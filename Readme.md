@@ -22,6 +22,13 @@ The consumer service consumes SQS events one at a time and puts data in the `RDS
 - [Expressjs](https://expressjs.com/)
 - [Knexjs](http://knexjs.org/)
 
+## AWS Resource
+- AWS EC2 (For Hosting APIs)
+- SQS
+- S3
+- Lambda
+- Cloudwatch Logs
+- IAM
 
 ## Installation
 - Configure the environment variables in `.env` as shown in `/sequr-apis/sample.env`

@@ -102,6 +102,7 @@ app.get('/v1/employees', async function (req, res) {
                 "data": data,
                 "limit": parseInt(limit),
                 "page": parseInt(page),
+                "totalData" : parseInt(totalCount[0]['count']),
                 "totalPages": totalPages,
                 "size": data.length
             })
@@ -116,6 +117,7 @@ app.get('/v1/employees', async function (req, res) {
                 "data": data,
                 "limit": parseInt(limit),
                 "page": parseInt(page),
+                "totalData" : parseInt(totalCount[0]['count']),
                 "totalPages": totalPages,
                 "size": data.length
             })
