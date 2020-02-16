@@ -12,7 +12,7 @@ const options = {
     pool: {
         min: 0,
         max: 15
-      }
+    }
 }
 
 const knex = require('knex')(options);
@@ -94,16 +94,16 @@ exports.handler = (event) => {
                     '${messageAttributes.company_name.stringValue}',
                     '${messageAttributes.mobile_no.stringValue}',
                     '${messageAttributes.email.stringValue}')`
-    
+
     // using Raw query as upsert/on conflict clause is not supported in knex
     let insertQuery = `INSERT into employees (employee_name,company_name,mobile_no,email)
                        values ${valueStr} ON CONFLICT (email) DO NOTHING`
-    
+
     log(`Insert query : ${insertQuery}`);
-    
+
     // insert record in the DB after validation
     knex.raw(insertQuery)
-        .then(async function() {
+        .then(async function () {
             log(`${record} from SQS inserted successfully.`);
             let myresult = await deleteSQSMessage(receiptHandle)
             log(`SQS message Delete response : ${myresult}`)
