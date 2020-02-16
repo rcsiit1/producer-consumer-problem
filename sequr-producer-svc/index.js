@@ -7,7 +7,7 @@ const randomstring = require("randomstring");
 AWS.config.update({
     accessKeyId: `${process.env.AWS_ACCESSKEY}`,
     secretAccessKey: `${process.env.AWS_SECRET}`,
-    region: 'ap-south-1',
+    region: 'ap-south-1'
 });
 
 // intialize SQS with a specific apiversion

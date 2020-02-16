@@ -1,2 +1,4 @@
 sequr-consumer-svc/node_modules/*
 sequr-producer-svc/node_modules/*
+sequr-apis/node_modules/*
+sequr-apis/.env
