@@ -1,0 +1,17 @@
+{
+  "name": "sequr-producer-svc",
+  "version": "1.0.0",
+  "description": "producer service to read messages from csv file and load it to SQS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rajan Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.619.0",
+    "csv-parser": "^2.3.2",
+    "fast-csv": "^4.1.0",
+    "randomstring": "^1.1.5"
+  }
+}
