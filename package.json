@@ -1,0 +1,17 @@
+{
+  "name": "sequr-consumer-service",
+  "version": "1.0.0",
+  "description": "Consumer service that consumes data from SQS and stores in database one at a time",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rajan Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.619.0",
+    "joi": "^14.3.1",
+    "knex": "^0.20.9",
+    "pg": "^7.18.1"
+  }
+}
