@@ -1,3 +1,5 @@
+/* Consumer Service to Consume SQS messages */
+
 // contruct connection object
 const options = {
     client: `${process.env.DB_CLIENT}`,
@@ -63,7 +65,7 @@ exports.handler = (event) => {
         "employee_name": messageAttributes.employee_name.stringValue,
         "company_name": messageAttributes.company_name.stringValue,
         "email": messageAttributes.email.stringValue,
-        "mobile_no": messageAttributes.mobile_no.stringValue
+        "mobile_no": parseInt(messageAttributes.mobile_no.stringValue)
     }
 
     // define joi schema to be validated
