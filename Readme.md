@@ -94,6 +94,10 @@ The consumer service consumes SQS events one at a time and puts data in the `RDS
         - Put a random delay while sending messages to SQS that would not create a sudden burst of events for lambda which would result in better availability of connection.
         - Instead of processing messages one by one (which is costly operation) messages should be processed in batch after polling the queue.
         - Manage the knex pool efficiently.
+    - Open Issues on Github
+        - [Transactions hanging in AWS Lambda](https://github.com/knex/knex/issues/2445)
+        - [AWS Discussion Forums](https://forums.aws.amazon.com/thread.jspa?threadID=216000)
+        - [Bug: Connection terminated unexpectedly (postgres)](https://github.com/knex/knex/issues/3523)
 
 ## Enhancements
 - Make the producer service independent of the csv column sequence(easily attainable).
