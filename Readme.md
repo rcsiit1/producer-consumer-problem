@@ -1,4 +1,4 @@
-# sequr-api-assgn
+# producer-consumer-problem
 These services were built using nodejs and AWS cloud services.There are two microservices i.e. Producer - Consumer,apis to upload csv file and list data with pagination.
 
 ## Producer
