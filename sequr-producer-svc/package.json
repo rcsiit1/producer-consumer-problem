@@ -11,7 +11,7 @@
   "dependencies": {
     "aws-sdk": "^2.619.0",
     "csv-parser": "^2.3.2",
-    "fast-csv": "^4.1.0",
+    "fast-csv": "^4.3.6",
     "randomstring": "^1.1.5"
   }
 }
